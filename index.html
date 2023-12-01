@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, imitial-scale=1.0">
+     <title>AluraBooks</title>
+     <link rel="stylesheet" href="reset.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>  
+   <header class="cabecalho">
+      <div class="container">
+         <input type="checkbox" id="menu" class="container__botao">
+         <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+         </label>
+         <ul class="lista-menu">
+            <li class="lista-menu__titulo">Menu</li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Destinos</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Avaliações</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Promoções</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Frota</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Sobre</a>
+            </li>
+
+         </ul>
+         <img src="img/aviao-logo2.jpg" alt="Logo do Turismo" class="container__logo">
+         <h1 class="container__titulo"><b class="container__titulo--negrito">D&S</b> Viagens</h1>
+      </div>
+      <div class="container">
+         <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+         <a href="#"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+      </div>  
+      </header>
+      <section class="banner">
+         <h2 class="banner__titulo">Já sabe para onde ir?</h2>
+         <p class="banner__texto"> Encontre em nosso catálogo sua próxima viagem!</p>
+         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima viagem?">
+      </section>
+      <section class="carrossel">
+         <h2 class="carrossel__titulo">Novos destinos!</h2>
+         <!-- Slider main container -->
+      <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide"><img src="img/sao-paulo.jpg" alt="São Paulo"></div>
+               <div class="swiper-slide"><img src="img/coliseu.jpg" alt="Coliseu"></div>
+               <div class="swiper-slide"><img src="img/sydney.jpg" alt="Sydney"></div>
+               <div class="swiper-slide"><img src="img/tokyo.jpg" alt="Tokyo"></div>
+               <div class="swiper-slide"><img src="img/paris.jpg" alt="Paris"></div>
+               <div class="swiper-slide"><img src="img/santorini.jpg" alt="Santorini"></div>
+            </div>
+
+   <div class="card">
+         <!-- 1º linha -->
+         <div class="card__descricao">
+            <!-- 1º coluna -->
+            <div class="descricao">
+               <img src="img/Estrelinhas.png" alt="Avaliação 5 estrelas">
+               <h3 class="descricao__titulo">Viagem mais visitada!</h3>
+               <h2 class="descricao__titulo-livro">Dubai</h2>
+               <p class="descricao__texto">Cidade dos Emirados Árabes conhecida pela riqueza, luxo e alto desenvolvimento.</p>
+            </div>
+            <!-- 2º coluna -->
+            <img src="img/dubai.jpg" class="descricao__imagem">
+         </div>
+   </div>
+
+      <!-- 2° linha -->
+      <div class="card__botoes">
+         <!-- 1° coluna -->
+         <ul class="botoes">
+            <li class="botoes__item"> <img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botoes__item"> <img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+         </ul>
+         <!-- 2° coluna -->
+         <a href="#" class="botoes__ancora">Saiba mais</a>
+      </div>
+      </section>
+
+      <section class="topicos">
+         <h2 class="topicos__titulo">DESTINOS VISITADOS RECENTEMENTE</h2>
+         <ul class="topicos__lista">
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Roma</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">São Paulo</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Sydney</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Paris</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Dubai</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Santorini</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Tokyo</a>
+            </li>
+            <li class="topicos__item">
+               <a href="#" class="topicos__link">Rio de Janeiro</a>
+            </li>
+         </ul>
+      </section>
+
+      <section class="contato">
+         <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+         <p class="contato__texto">Atualizações de novas viagens, pacotes, promoções.</p>
+         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+      </section>
+
+      <hr />
+
+      <footer class="rodape">
+         <h2 class="rodape__titulo">Grupo Alura</h2>
+      </footer>
+    
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>>
+      <script>
+         const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+               el: '.swiper-pagination',
+               type: 'bullets',
+            }
+         });
+      </script>
+</body>
+</html>
